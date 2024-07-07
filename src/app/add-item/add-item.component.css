@@ -1,0 +1,28 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+  
+mat-card {
+    width: 30vw;
+}
+
+mat-card-header {
+    justify-content: center;
+}
+
+mat-card-title {
+    margin-bottom: 12px;
+}
+
+mat-form-field {
+    width: 100%;
+}
+  

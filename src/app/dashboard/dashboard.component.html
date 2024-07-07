@@ -1,8 +1,11 @@
 <div class="example-container mat-elevation-z8">
-  <mat-form-field appearance="outline" class="search-bar">
-    <mat-label>Search</mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="Search by name or description">
-  </mat-form-field>
+  <div class="header">
+    <mat-form-field appearance="outline" class="search-bar">
+      <mat-label>Search</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Search by name or description">
+    </mat-form-field>
+    <button mat-raised-button [routerLink]="['/add-item']">Add Item</button>
+  </div>
 
   <mat-table [dataSource]="dataSource" class="mat-table" matSort>
     <!-- Index Column -->
@@ -43,6 +46,4 @@
   </mat-table>
 
   <mat-paginator [pageSizeOptions]="[10]" showFirstLastButtons></mat-paginator>
-
-  <button mat-raised-button [routerLink]="['/add-item']">Add Item</button>
 </div>

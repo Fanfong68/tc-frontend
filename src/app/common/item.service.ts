@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 export interface Item {
   id: number;
   name: string;
-  description?: string; // Add the description field
+  description?: string;
 }
 
 @Injectable({

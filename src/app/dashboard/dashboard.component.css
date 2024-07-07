@@ -1,17 +1,25 @@
 .example-container {
-    margin: 20px;
-  }
+  margin: 20px;
+}
   
-  .mat-elevation-z8 {
-    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
-  }
+.mat-elevation-z8 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+}
   
-  button {
-    margin-right: 8px;
-  }
-  
-  .search-bar {
-    margin-bottom: 20px;
-    width: 100%;
-  }
+.search-bar {
+  width: 50vw;
+  margin-bottom: -1.25em !important;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+::ng-deep .mat-form-field-wrapper{
+  margin-bottom: -1.25em;
+}
   
